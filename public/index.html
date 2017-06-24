@@ -4,139 +4,21 @@
 	<meta charset="UTF-8">
 	<title>NYT Article Scrubber</title>
 
-	<!-- Latest compiled and minified CSS & JS -->
-	<link rel="stylesheet" href="css/style.css">
+	<!-- Here we include bootstrap. This will be made available to all of the generated HTML/JS that React generates-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
 
 </head>
+
 <body>
+	
+	<!-- This is where React will deploy the contents it generates -->
+	<div id="app"></div>
 
-	<div class="container">
-		<div class="jumbotron">
-			<h1><center><strong>New York Times Article Scrubber</strong></center></h1>
-			<p><em>Search for and annotate articles of interest!</em></p>
-			<!-- 			<p>
-				<a class="btn btn-primary btn-lg">Show Child #1</a>
-				<a class="btn btn-danger btn-lg">Show Child #2</a>
-			</p> -->
-		</div>
-
-		<div class="row">
-
-<!-- Search Child -->
-			<div class="col-lg-12">
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title">Search</h3>
-					</div>
-					<div class="panel-body">
-
-						<form>
-							<center>
-							<p class="glyphicon glyphicon-search label label-success">Topic</p><br>
-							<input type="text" name="Topic"><br>
-							<p class="glyphicon glyphicon-calendar label label-success">Start Year</p><br>
-							<input type="text" name="StartYear"><br>
-							<p class="glyphicon glyphicon-calendar label label-success">End Year</p><br>
-							<input type="text" name="EndYear"><br><br>							
-							<input type="submit" value="Submit" class="btn btn-primary btn-sm">
-							</center>
-						</form>
-					</div>
-				</div>
-			</div>
-
-<!-- Search Results Child -->
-			<div class="col-lg-12">
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title">Saved Articles</h3>
-					</div>
-						<div class="panel panel-warning">
-							<div class="panel-heading">
-								<h3 class="panel-title">Result #1</h3>
-							</div>
-							<div class="panel-body" id="r1">
-								Search Result 1
-								<input type="submit" value="Save" class="btn btn-success btn-sm">
-							</div>
-						</div>
-										
-						<div class="panel panel-warning">
-							<div class="panel-heading">
-								<h3 class="panel-title">Result #2</h3>
-							</div>
-							<div class="panel-body" id="r1">
-								Search Result 2
-								<input type="submit" value="Save" class="btn btn-success btn-sm">
-							</div>
-						</div>
-
-						<div class="panel panel-warning">
-							<div class="panel-heading">
-								<h3 class="panel-title">Result #3</h3>
-							</div>
-							<div class="panel-body" id="r1">
-								Search Result 3
-								<input type="submit" value="Save" class="btn btn-success btn-sm">
-							</div>
-						</div>
-
-						<div class="panel panel-warning">
-							<div class="panel-heading">
-								<h3 class="panel-title">Result #4</h3>
-							</div>
-							<div class="panel-body" id="r1">
-								Search Result 4
-								<input type="submit" value="Save" class="btn btn-success btn-sm">
-							</div>
-						</div>
-
-						<div class="panel panel-warning">
-							<div class="panel-heading">
-								<h3 class="panel-title">Result #5</h3>
-							</div>
-							<div class="panel-body" id="r1">
-								Search Result 5
-								<input type="submit" value="Save" class="btn btn-success btn-sm">
-							</div>
-						</div>
-				</div>
-			</div>
-
-<!-- Saved Articles Child -->
-			<div class="col-lg-12">
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title">Saved Articles</h3>
-					</div>
-						<div class="panel panel-warning">
-							<div class="panel-heading">
-								<h3 class="panel-title">Saved #1</h3>
-							</div>
-							<div class="panel-body" id="r1">
-								Saved 1
-								<input type="submit" value="Remove" class="btn btn-danger btn-sm">
-							</div>
-						</div>
-
-						<div class="panel panel-warning">
-							<div class="panel-heading">
-								<h3 class="panel-title">Saved #2</h3>
-							</div>
-							<div class="panel-body" id="r1">
-								Saved 2
-								<input type="submit" value="Remove" class="btn btn-danger btn-sm">
-							</div>
-						</div>			
-				</div>
-			</div>		
-
-		</div>
-
-	</div>
-
+	<!-- JS code will be transpiled into this bundle.js file -->
+	<script src="bundle.js"></script>
+	
 </body>
 </html>
